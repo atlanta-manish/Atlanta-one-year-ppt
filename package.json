@@ -1,0 +1,25 @@
+{
+  "name": "atlanta-year-one-manish-kumar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Manish Kumar's annual review presentation for Atlanta Systems Private Limited.",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build && node scripts/build-offline.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "start": "node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "motion": "13.2.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "vite": "8.3.0"
+  }
+}
