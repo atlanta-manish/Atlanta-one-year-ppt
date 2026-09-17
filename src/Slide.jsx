@@ -12,7 +12,7 @@ function Item({ item, numbered = false }) {
 
 export const Slide = memo(function Slide({ slide, index, miniature = false }) {
   const dark = slide.theme === 'dark'
-  return <article className={`slide layout-${slide.layout} ${dark ? 'theme-dark' : 'theme-light'}`} aria-hidden={miniature || undefined}>
+  return <article className={`slide layout-${slide.layout} ${dark ? 'theme-dark' : 'theme-light'} slide-${slide.id}`} aria-hidden={miniature || undefined}>
     <div className="slide-topline"><span>{slide.eyebrow}</span><span className="slide-brand">ATLANTA SYSTEMS</span></div>
     {(slide.layout === 'cover' || slide.layout === 'closing') ? <div className="cover-content">
       <h1>{slide.title}</h1>
